@@ -1,0 +1,6 @@
+.bg-body-tertiary {
+    width:100%;
+  }
+  .bg-body-tertiary .container{
+  justify-content: space-between;
+  }
