@@ -1,0 +1,14 @@
+.bg-body-tertiary {
+    width:100%;
+  }
+  .bg-body-tertiary .container{
+  justify-content: space-between;
+  }
+
+  #slider{
+    height:700px;
+  }
+
+  .slider-wrapper{
+    height:400px;
+  }

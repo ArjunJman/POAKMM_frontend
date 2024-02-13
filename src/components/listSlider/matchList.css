@@ -1,0 +1,17 @@
+.match-card{
+  width:100%;
+}
+.location{
+    margin-top:-1rem;
+}
+.loc-ven{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-top:2rem;
+}
+.card-title{
+    text-decoration: none;
+    text-decoration-style: none;
+}
