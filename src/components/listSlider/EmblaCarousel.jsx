@@ -8,6 +8,7 @@ import {
 import imageByIndex from './imageByIndex '
 import { Link } from 'react-router-dom'
 import ImgMediaCard from './ImgMediaCard'
+import './embla.css'
 
 
 const EmblaCarousel = (props) => {
@@ -50,6 +51,7 @@ const EmblaCarousel = (props) => {
 
   return (
     <div className="embla">
+      <h1 className='heading'>Upcoming Events</h1>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {matches.map((match,index) => (
