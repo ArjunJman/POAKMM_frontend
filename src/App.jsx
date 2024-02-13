@@ -9,6 +9,8 @@ import ListSlider from './components/listSlider/listSlider.jsx'
 import EventDetails from './components/eventDetails/eventDetails.jsx';
 import CustomerReviews from './components/customers/CustomerReviews.jsx';
 import { Outlet, Route, Routes } from 'react-router-dom';
+import Login from './components/Login/Login.jsx';
+
 const Layout = () => {
   return (
     <>
@@ -38,8 +40,9 @@ function App() {
     <div className='homepage'>
 
       <Routes>
+        <Route index element={<Login />} />
         <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
+          <Route path="/homepage" element={<HomePage />} />
           <Route path="/events/:id" element={<EventDetails />} />
         </Route>
       </Routes>
