@@ -54,7 +54,7 @@ const EmblaCarousel = (props) => {
         <div className="embla__container">
           {matches.map((match,index) => (
             <div className="embla__slide" key={index}>     
-              <Link to={`/events/${index}`}>
+              <Link to={`/events/${match.match_id}` }>
                 <ImgMediaCard data={match}/>
               </Link>
             </div>
