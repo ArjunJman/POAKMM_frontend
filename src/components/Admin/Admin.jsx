@@ -99,6 +99,7 @@ function Admin() {
                 <div className="ext-btn" onClick={toggleOpen}>
                     <AddToPhotosIcon style={{ fontSize: 200 }} />
                 </div>
+                
 
                 <MDBCollapse open={isOpen}>
                     <form className="input-details" onSubmit={handleSubmit}>

@@ -12,6 +12,7 @@ import { Outlet, Route, Routes } from 'react-router-dom';
 import Login from './components/Login/Login.jsx';
 import Ticket from './components/BookTickets/Ticket'
 import Admin from "./components/Admin/Admin.jsx";
+import User from './components/User/User.jsx';
 
 const Layout = () => {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="/homepage" element={<HomePage />} />
           <Route path="/events/:id" element={<EventDetails />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/user" element={<User />} />
         </Route>
         <Route path="/bookticket" element={<Ticket />} />
       </Routes>

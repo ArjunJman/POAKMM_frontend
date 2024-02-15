@@ -11,11 +11,11 @@ function Carausel() {
         return (
             <Carousel id='slider'>
                 <div>
-                    <img src={image1} />
+                    <img src={image2} />
                     <p className="legend">Legend 1</p>
                 </div>
                 <div>
-                    <img src={image2} />
+                    <img src={image1}/>
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
