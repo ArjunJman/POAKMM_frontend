@@ -1,21 +1,15 @@
-import { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './CustomerReviews.css'
-import img1 from '../../images/profile-img.jfif'
-
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./CustomerReviews.css";
 
 function Reviews({ author, title, content, imgSrc }) {
-  
-
-
-  return (       
-        <div class="box">
-            <img src={imgSrc} alt={author} />
-            <h3>{author}</h3>
-            <p>{content}</p>
-        </div>
-  )
+  // just made a component which will be called again and again untill the json file is finished and using props to assign elements
+  return (
+    <div class="box">
+      <img src={imgSrc} alt={author} />
+      <h3>{author}</h3>
+      <p>{content}</p>
+    </div>
+  );
 }
 
 export default Reviews;

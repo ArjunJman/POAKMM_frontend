@@ -1,37 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-.navbar{
-    width:100%;
-    height:55px;
-}
-
-.container{
-    width:100%;
-    height:100%;
-    /* color:antiquewhite; */
-  
-
-}
-.logo{
-    width:100px;
-  
-}
-.logo h1{
-    color: #DCCA87;
-    font-family: "Playfair Display", serif;
-    font-size:2rem;
+.navbar {
+  width: 100%;
+  height: 55px;
 }
 
-.navbar-content{
-    color:white;
-}
-#profile-img-container{
-    background:transparent;
-    border:none;
+.container {
+  width: 100%;
+  height: 100%;
 }
 
-.profile-img{
-    width:40px;
-    height:40px;
-    border-radius: 50%;
+.logo {
+  width: 100px;
+}
+
+.logo h1 {
+  color: #dcca87;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.navbar-content {
+  color: white;
+}
+
+#profile-img-container {
+  background: transparent;
+  border: none;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
