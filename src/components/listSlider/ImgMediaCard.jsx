@@ -1,10 +1,8 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
+
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+
 import './matchList.css'
  
 export default function ImgMediaCard(match) {
@@ -12,14 +10,15 @@ export default function ImgMediaCard(match) {
     <div className='match-card' style={{ display: 'flex', justifyContent:'center', backgroundColor: '#000000' }}>
       <Card sx={{
         
-        backgroundColor: '#424242', // Dark background color
+        backgroundColor: '#000', // Dark background color
         color: 'white', // White text color
       }}>
         <CardMedia
           component="img"
           alt="green iguana"
-          height="140px"
+          height="100px"
           image={match.data.img_url}
+          style={{ height: '200px', justifyContent:'center', backgroundColor: '#000000' }}
         />
                <div className='card-title'>{match.data.name}</div>
                <p className='venue'>{match.data.date}</p>

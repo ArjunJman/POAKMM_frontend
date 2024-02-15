@@ -7,10 +7,16 @@ import profile from '../../images/profile-img.jfif'
 
 
 function NavbarUp() {
+
+  const clearToken=()=>{
+    sessionStorage.clear()
+  }
+
   return (
     <Navbar  className='navbar'>
       <Container className='container'>
         <Navbar.Brand href="#home" className='logo' ><h1>POAKMM</h1></Navbar.Brand>
+        {sessionStorage.getItem('myToken') ? 
         <Dropdown>
       <Dropdown.Toggle   id='profile-img-container'>
        <img src={profile} className='profile-img' />
@@ -18,9 +24,11 @@ function NavbarUp() {
 
       <Dropdown.Menu>
         <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">LogOut</Dropdown.Item>
+        <Dropdown.Item href="/" onClick={clearToken}>LogOut</Dropdown.Item>
       </Dropdown.Menu>
-    </Dropdown>
+    </Dropdown>:
+    <a href='/' className='text-center pt-2 font-semibold w-[10rem] h-10 bg-[#DCCA87] rounded text-[#0C0C0C] no-underline '>Login</a>
+    }
       
       </Container>
     </Navbar>

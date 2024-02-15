@@ -28,7 +28,14 @@ const EmblaCarousel = (props) => {
   useEffect(() => {
     const fetchMatches = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/getEvent'); // Assuming your data is served at this endpoint
+        var requestOptions = {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization':`Bearer ${sessionStorage.getItem('myToken')}`
+          },
+        };
+        const response = await fetch('http://localhost:3000/api/fetchMatches',requestOptions); // Assuming your data is served at this endpoint
         if (!response.ok) {
           throw new Error('Failed to fetch matches');
         }

@@ -102,6 +102,7 @@ const Login = () => {
                 console.log('response',result)
                 setToken(result.accessToken);
                 sessionStorage.setItem("myToken", result.accessToken);
+                sessionStorage.setItem("email",formData.get('email'));
 
                 if (typeof result.accessToken === 'undefined' || result.accessToken === "") {
                     // Handle the case where token is undefined or an empty string.
