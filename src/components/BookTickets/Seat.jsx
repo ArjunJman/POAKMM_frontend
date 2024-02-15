@@ -12,12 +12,20 @@ const Seat=({val,ticketDetails})=>{
     
     const handleOnClick= (e)=>{
         setIsselected(!isselected)
-       
+       if(!isselected && !allTickets.find((ticket) => ticket.seat_no === val[0]))
+       {
         const obj=[...allTickets]
         obj.push({"id":ticketDetails.id,"date":ticketDetails.date,"seat_no":val[0],
         "payment_date":"2024-01-12","match_id":ticketDetails.match_id,"email":username})
         console.log(isselected)
         setAllTickets(obj)
+       }
+       else{
+            let obj=[...allTickets]
+            obj = obj.filter((ticket)=> ticket.seat_no!==val[0])
+            setAllTickets(obj)
+             console.log("AllTickets",allTickets)
+       }
         
         // console.log("allTickets",allTickets)
     }
