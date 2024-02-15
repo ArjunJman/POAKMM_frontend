@@ -1,72 +1,68 @@
-.extension{
-    display:flex; 
+.extension {
+  display: flex;
   flex-direction: column;
-    
- }
- .ext-btn{
-     height:200px;
-     width:200px;
-     background-color: #DCCA87;
-     margin: auto;
- }
- .plus{
-     height:150px;
-     width:150px;
- }
- 
- .input-text{
-     color:#DCCA87;
-     height:75px;
-     width:100%;
-     background-color: transparent;
-     border:5px solid #DCCA87 ;
-     margin-top:1rem;
-     border-radius:1rem;
- }
- 
- .input-date{
-     color:#DCCA87;
-     height:75px;
-     width:100%;
-     background-color: transparent;
-     border:5px solid #DCCA87 ;
-     margin-top:1rem;
-     border-radius:1rem;
- }
- .one-col{
-     color:#DCCA87;
-     height:75px;
-     width:20%;
-     margin:1rem;
- 
-     background-color: transparent;
-     border:5px solid #DCCA87 ;
-     margin-top:3rem;
-     border-radius:1rem;
- }
- 
- input::placeholder{
-     color:#DCCA87;
-     padding-left: 2rem;  
- }
- 
- .input-details{
-     margin:auto;
-     max-width: 900px;
-     min-width: 350px;
- }
- 
- .submit-button{
-     color:#DCCA87;
-     height:75px;
-     width:100%;
-     /* background-color: transparent; */
-     /* border:5px solid #DCCA87 ; */
-     margin-top:1rem;
-     border-radius:1rem;
- }
- 
- .submit-button:hover{
-     background-color:#DCCA87;
-    color:#000000;
- }
+}
+.ext-btn {
+  height: 200px;
+  width: 200px;
+  background-color: #dcca87;
+  margin: auto;
+}
+.plus {
+  height: 150px;
+  width: 150px;
+}
+
+.input-text {
+  /* color:#DCCA87; */
+  height: 75px;
+  width: 100%;
+  background-color: transparent;
+  border: 5px solid #dcca87;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.input-date {
+  /* color: #dcca87; */
+  height: 75px;
+  width: 100%;
+  background-color: transparent;
+  border: 5px solid #dcca87;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.one-col {
+  color: #aaaaaa;
+  height: 75px;
+  width: 20%;
+  margin: 1rem;
+
+  background-color: transparent;
+  border: 5px solid #dcca87;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+input::placeholder {
+  padding-left: 2rem;
+}
+
+.input-details {
+  margin: auto;
+  max-width: 900px;
+  min-width: 350px;
+}
+
+.submit-button {
+  color: #dcca87;
+  height: 75px;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #dcca87;
+  color: #000000;
+}
