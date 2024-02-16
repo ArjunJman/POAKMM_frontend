@@ -14,7 +14,7 @@ function NavbarUp() {
   return (
     <Navbar className="navbar">
       <Container className="container">
-        <Navbar.Brand href="#home" className="logo">
+        <Navbar.Brand href="/homepage" className="logo">
           <h1>POAKMM</h1>
         </Navbar.Brand>
         {/* logic to get profile image with logout and profile option if legged in.
@@ -27,7 +27,9 @@ function NavbarUp() {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="/user">Profile</Dropdown.Item>
+            { sessionStorage.getItem("email")==="om"?
+              <Dropdown.Item href="/admin">Admin</Dropdown.Item>:<></>}
+              <Dropdown.Item href="/user">{sessionStorage.getItem("email")} - My Tickets</Dropdown.Item>
               <Dropdown.Item href="/" onClick={clearToken}>
                 LogOut
               </Dropdown.Item>

@@ -243,7 +243,7 @@ const Login = () => {
                         Log In
                     </Button>
                     <Grid container>
-                        <Grid item xs>
+                        <Grid item xs textAlign={'start'}>
                             <Link href="#" variant="body2" sx={{color:'#DCCA87',textDecoration:'none'}}>
                                 Forgot password?
                             </Link>
@@ -324,7 +324,7 @@ const Login = () => {
                         Sign Up
                     </Button>
                     <Grid container>
-                        <Grid item xs>
+                        <Grid item xs textAlign={'start'}>
                             <Link href="#" variant="body2" onClick={toggleLogin}  sx={{color:'#DCCA87',textDecoration:'none'}}>
                                 Login
                             </Link>
