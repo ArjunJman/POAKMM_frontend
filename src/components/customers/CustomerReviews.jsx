@@ -25,29 +25,7 @@ function CustomerReviews() {
         ))}
       </div>
 
-      {/* Ticket container will contain all the tickets booked by the logged in user. */}
-      <div className="ticket-container">
-        <div className="ticket-card">
-          <h1>AUS Vs IND</h1>
-          <div className="second-row">
-            <h5>Venue: venue</h5>
-            <h5>Date: 15/01/2024</h5>
-          </div>
-
-          <h5 className="second-row">Seats no.</h5>
-          <h5 className="second-row">Booking Date: 15/01/2024</h5>
-        </div>
-        <div className="ticket-card">
-          <h1>AUS Vs IND</h1>
-          <div className="second-row">
-            <h5>Venue: venue</h5>
-            <h5>Date: 15/01/2024</h5>
-          </div>
-
-          <h5 className="second-row">Seats no.</h5>
-          <h5 className="second-row">Booking Date: 15/01/2024</h5>
-        </div>
-      </div>
+      
     </div>
   );
 }
