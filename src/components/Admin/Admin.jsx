@@ -5,6 +5,7 @@ import { MDBCollapse } from "mdb-react-ui-kit";
 import AddToPhotosIcon from "@mui/icons-material/AddToPhotos";
 
 function Admin() {
+  //const [isAdmin, setIsAdmin] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     match_id: "",
@@ -94,7 +95,10 @@ function Admin() {
   };
 
   return (
-    <div className="homepage">
+    <>
+    
+    { sessionStorage.getItem("email")==="om"?
+      <div className="homepage">
       <div className="extension">
         <div className="ext-btn" onClick={toggleOpen}>
           <AddToPhotosIcon style={{ fontSize: 200 }} />
@@ -168,6 +172,9 @@ function Admin() {
         </MDBCollapse>
       </div>
     </div>
+    : <h1 className="text-white">Sorry You don't seem to be Admin!!!</h1>
+    }
+    </>
   );
 }
 
