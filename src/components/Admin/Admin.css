@@ -14,7 +14,8 @@
 }
 
 .input-text {
-
+  color: #aaaaaa;
+  
   height: 75px;
   width: 100%;
   background-color: transparent;
@@ -25,7 +26,7 @@
 
 .input-date {
 
-
+  color: #aaaaaa;
   height: 75px;
   width: 100%;
   background-color: transparent;
@@ -44,7 +45,13 @@
   border-radius: 1rem;
 }
 
+
+input::content {
+
+  padding-left: 2rem;
+}
 input::placeholder {
+  color:#dcca87;
   padding-left: 2rem;
 }
 
