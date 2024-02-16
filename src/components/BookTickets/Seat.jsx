@@ -10,6 +10,7 @@ const Seat=({val,ticketDetails})=>{
     let unselected='text-center w-10 h-10 border rounded shadow-xl seat bg-slate-300 text-black'
     let disabled='text-center w-10 h-10 border rounded shadow-xl seat bg-red-300 text-black cursor-not-allowed '
     
+    //event to select seats and the event details for the ticket generation
     const handleOnClick= (e)=>{
         setIsselected(!isselected)
        if(!isselected && !allTickets.find((ticket) => ticket.seat_no === val[0]))

@@ -14,7 +14,7 @@
 }
 
 .input-text {
-  /* color:#DCCA87; */
+
   height: 75px;
   width: 100%;
   background-color: transparent;
@@ -24,7 +24,8 @@
 }
 
 .input-date {
-  /* color: #dcca87; */
+
+
   height: 75px;
   width: 100%;
   background-color: transparent;
@@ -37,7 +38,6 @@
   height: 75px;
   width: 20%;
   margin: 1rem;
-
   background-color: transparent;
   border: 5px solid #dcca87;
   margin-top: 3rem;
@@ -61,6 +61,7 @@ input::placeholder {
   margin-top: 1rem;
   border-radius: 1rem;
 }
+
 
 .submit-button:hover {
   background-color: #dcca87;

@@ -12,16 +12,9 @@ export const allTicketsContext = createContext();
 
 const Ticket=({ id,name, cat, date, loc, venue })=>{
 
-  // const eventJson = JSON.parse(JSON.stringify(event))
-  // console.log(eventJson)
-  ;
   const [open, setOpen] = useState(false);
   const handleOpen = () => {setOpen(true);}
   const handleClose = () => setOpen(false);
-  // const [seats,setSeats]=React.useState([{id:"1A"},{id:"2A"}]);
-  // const [ticketDetails,setTickdetails] = useState(event)
-  // const ticketDetails=event;
-
   const ticketDetails={id:1,name:name,match_id:id,cat:cat,date:date,loc:loc,Venue:venue};
   const [showTickets,setShowTickets] = useState(false);
   const [allTickets,setAllTickets]=useState([]);
@@ -33,11 +26,6 @@ const Ticket=({ id,name, cat, date, loc, venue })=>{
     seats.push({id:allTickets[ticket]['seat_no']})
   }
 
-
-// useEffect(()=>{
-  
-  
-// },[])
 
 console.log("seats",seats);
 
@@ -61,6 +49,7 @@ console.log("seats",seats);
                 console.log('response',result)
                 if (typeof result.message === 'undefined' || result.message === "") {
                     // Handle the case where message is undefined or an empty string.
+
                     console.log("Seats Not Confirmed")
                     alert("Seats Not Confirmed")
                 } else {
@@ -86,13 +75,16 @@ console.log("seats",seats);
       </TriggerButton>
       </div>}
       </div>
+      
       <Modal
         open={open}
         onClose={handleClose}
         slots={{ backdrop: StyledBackdrop }}
         sx={{backgroundColor:'#545454'}}
       >
+
         <ModalContent sx={{ width: 650,height: 480,padding:3,backgroundColor:'#0C0C0C',color:'white' }}>
+
           <div className=' '>
           <a href={`/events/${id}`} className=' w-1 text-center'><img className='w-5 h-5 rounded-full' style={{backgroundColor:'white'}} src={leftarrow} alt={leftarrow} /></a>
           <h2 id="unstyled-modal-title" className="modal-title text-center text-2xl font-semibold font-mono ">
@@ -121,6 +113,7 @@ console.log("seats",seats);
           >
             Confirm Booking</a>
           </div>
+          
         </ModalContent>
       </Modal>
     </div>

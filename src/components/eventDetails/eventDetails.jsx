@@ -9,7 +9,7 @@ function EventDetails() {
   const [event, setEvent] = useState(null);
   const { id } = useParams();
   let name, cat, date, loc, Venue;
-
+   
   // fetching the event details from backend using token
   useEffect(() => {
     console.log("In events token", sessionStorage.getItem("myToken"));
@@ -22,6 +22,7 @@ function EventDetails() {
             Authorization: `Bearer ${sessionStorage.getItem("myToken")}`,
           },
         };
+        
         const response = await fetch(
           `http://localhost:3000/api/fetchMatch/${id}`,
           requestOptions

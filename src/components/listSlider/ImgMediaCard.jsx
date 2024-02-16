@@ -5,7 +5,7 @@ import "./matchList.css";
 
 // getting the event card by getting the event details as a props
 export default function ImgMediaCard(match) {
-  return (
+  return ( 
     <div
       className="match-card"
       style={{
@@ -14,12 +14,16 @@ export default function ImgMediaCard(match) {
         backgroundColor: "#000000",
       }}
     >
+      {/* specifying the card containing the event details */}
       <Card
         sx={{
           backgroundColor: "#000",
           color: "white",
         }}
       >
+        
+        {/* card image contains the details of the events   */}
+       
         <CardMedia
           component="img"
           alt="green iguana"
@@ -30,6 +34,7 @@ export default function ImgMediaCard(match) {
             justifyContent: "center",
             backgroundColor: "#000000",
           }}
+
         />
         <div className="card-title">{match.data.name}</div>
         <p className="venue">{match.data.date}</p>

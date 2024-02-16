@@ -3,8 +3,6 @@ import Seat from './Seat';
 
 const Seats =({ticketDetails,id}) => {
 
-
-  
   const [seat, setSeat] = useState({});
   console.log("ss",id)
   useEffect(()=>{
@@ -30,6 +28,7 @@ const Seats =({ticketDetails,id}) => {
     console.error('Error fetching matches:', error);
   })},[])
 
+  
   return (
     <>
       <div>

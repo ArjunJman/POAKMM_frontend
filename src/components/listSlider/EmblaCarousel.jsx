@@ -11,7 +11,7 @@ import "./embla.css";
 
 // embla carousel component to get the card sliders with previous and next buttons
 const EmblaCarousel = (props) => {
-  const { slides, options } = props;
+  const { options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [matches, setMatches] = useState([]);
 
