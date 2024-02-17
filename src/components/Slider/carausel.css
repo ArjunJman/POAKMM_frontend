@@ -1,14 +1,26 @@
 .bg-body-tertiary {
-    width:100%;
-  }
-  .bg-body-tertiary .container{
+  width: 100%;
+}
+.bg-body-tertiary .container {
   justify-content: space-between;
-  }
+}
 
-  #slider{
-    height:700px;
-  }
+#slider {
+  max-height: 800px;
+}
 
-  .slider-wrapper{
-    height:550px;
+.slider-wrapper {
+  max-height: 800px;
+}
+
+@media only screen and (min-width: 690px) and (max-width: 900px) {
+  body {
+    font-size: 14px;
   }
+  #slider {
+    max-height: 400px;
+  }
+  .slider-wrapper {
+    max-height: 450px;
+  }
+}

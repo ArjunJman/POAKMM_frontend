@@ -1,56 +1,106 @@
- .customer{
-    width:100%;
-padding-bottom:3rem;
-} 
-.customer h1{
-    color:silver;
+.customer {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.customer h1 {
+  color: silver;
 }
 
-.review-container{
-    margin-top: 2rem;;
-    width:90%;
-    margin-left:5%;
-    margin-right:5%;
-    height:100%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    gap:1rem;
+.review-container {
+  margin-top: 2rem;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
- .box{
-    width:30%;
-    text-align: center;
-    /* padding:2rem; */
-    border:.5rem solid #fff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
-    flex:1 1 15rem;  
-    background: #333;
-    margin-top: 10rem;  
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
-} 
-
-.box img{
-   height:12rem;
-   width:12rem;
-   
-   border-radius: 25%;
-   border:1rem solid #fff;
-   margin-top: -7rem;
-   object-fit:cover;  
-} 
-
- .box h3{
-    color:#fff;
-    font-size: 1.5rem;
-    padding:.5rem 0;
+/* css for each customer */
+.box {
+  text-align: center;
+  border: 0.5rem solid #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  flex: 1 1 15rem;
+  background: #333;
+  margin-top: 10rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
 }
 
- .box p{
-    color:#eee;
+.box img {
+  height: 240px;
+  width: 240px;
+  border-radius: 25%;
+  border: 1rem solid #fff;
+  margin-top: -7rem;
+  object-fit: cover;
+}
+
+.box h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.box p {
+  color: #eee;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1500px) {
+  body {
+    font-size: 14px;
+  }
+  .box {
+    flex: 1 1 12rem;
+    margin-top: 5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+
+  .box img {
+    height: 150px;
+    width: 150px;
+    margin-top: -5rem;
+    border: 0.8rem solid #fff;
+    object-fit: cover;
+  }
+
+  .box h3 {
+    font-size: 1.2rem;
+  }
+
+  .box p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .box {
+    flex: 1 1 10rem;
+    margin-top: 5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+
+  .box img {
+    height: 100px;
+    width: 100px;
+    border: 0.6rem solid #fff;
+    margin-top: -3rem;
+    object-fit: cover;
+  }
+
+  .box h3 {
     font-size: 1rem;
-    padding:.5rem 0;
+  }
+
+  .box p {
+    font-size: 0.5rem;
+  }
 }
-
-

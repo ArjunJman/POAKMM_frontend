@@ -22,11 +22,5 @@
       "title": "Lorem ipsum",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus pariatur nihil rem deserunt nobis veritatis esse placeat facere voluptatum ducimus corrupti in, eligendi inventore maiores, reprehenderit explicabo quam doloribus.",
       "imgSrc": "https://randomuser.me/api/portraits/men/50.jpg"
-    },
-    {
-      "author": "Wash Pont",
-      "title": "The best overall service",
-      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus pariatur nihil rem deserunt nobis veritatis esse placeat facere voluptatum ducimus corrupti in, eligendi inventore maiores, reprehenderit explicabo quam doloribus.",
-      "imgSrc": "https://randomuser.me/api/portraits/men/51.jpg"
     }
   ]
