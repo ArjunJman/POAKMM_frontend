@@ -158,8 +158,8 @@
     font-size: 0.55rem;
   }
   .side-content {
-    max-height: 350px;
+    max-height: 550px;
     position: relative;
-    bottom: 300px;
+    top: 10px;
   }
 }
