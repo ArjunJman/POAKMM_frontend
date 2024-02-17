@@ -9,7 +9,7 @@ function EventDetails() {
   const [event, setEvent] = useState(null);
   const { id } = useParams();
   let name, cat, date, loc, Venue;
-   
+
   // fetching the event details from backend using token
   useEffect(() => {
     console.log("In events token", sessionStorage.getItem("myToken"));
@@ -22,7 +22,7 @@ function EventDetails() {
             Authorization: `Bearer ${sessionStorage.getItem("myToken")}`,
           },
         };
-        
+
         const response = await fetch(
           `http://localhost:3000/api/fetchMatch/${id}`,
           requestOptions
@@ -53,7 +53,7 @@ function EventDetails() {
         className="back-img"
       />
       <div className="content row">
-        <div className="event-details col-lg-8">
+        <div className="event-details col-lg-8 col-md-7 col-md-12">
           {event && (
             <>
               <img src={event.img_url} />
@@ -101,7 +101,7 @@ function EventDetails() {
           )}
         </div>
         {/* logic for booking the tickets */}
-        <div className="side-content col-lg-4">
+        <div className="side-content col-lg-4 col-md-5 col-sm-12">
           <Ticket
             id={id}
             name={name}
@@ -117,3 +117,6 @@ function EventDetails() {
 }
 
 export default EventDetails;
+
+// -----------------------------------------------------------------------------------------------------------
+// just demo code for checking responsivity below
