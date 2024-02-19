@@ -31,7 +31,7 @@ This React application serves as a platform for managing events, booking tickets
 - cd POAKMM_backend   (in terminal 2)
 
 3. Install dependencies:
-- npm install  (int bothe terminal)
+- npm install  (int both terminal)
 
 4. Run the server (in Terminal 2)
 - nodemon index.js  or node index.js
